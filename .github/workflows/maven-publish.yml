@@ -27,18 +27,4 @@ jobs:
       - name: "Запускаем тесты"
         run: mvn clean test
         
-      - name: "Генерируем аллюр-репорт"
-        uses: simple-elf/allure-report-action@master
-        id: allure-report
-        with:
-          allure_results: allure-results
-          gh_pages: gh-pages
-          allure_report: allure-report
-          allure_history: allure-history
-          
-      - name: "Пушим аллюр-репорт в ветку gh-pages"
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+
