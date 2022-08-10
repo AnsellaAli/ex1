@@ -12,7 +12,7 @@ import static org.junit.Assert.assertTrue;
 public class CardPage {
 
     private final By TAB_LIST = By.cssSelector(".Wrapper-sc-1vydk7-0.jLWLXd.TabText-sc-tyqhzb-3.faRXmE");
-    private final By CARD_LIST = By.cssSelector(".Wrapper-sc-6nwvzq-0.kRJvZg.styled__TitleMobile-sc-m0n4zo-8.frcrJF");
+    private final By CARD_LIST = By.cssSelector(".MobileWrapper-sc-1w1j3uo-0.ivcTWV .Wrapper-sc-6nwvzq-0.kRJvZg.styled__TitleMobile-sc-m0n4zo-8.frcrJF");
 
 
     @Step("Выбрать сортировку {0}")
