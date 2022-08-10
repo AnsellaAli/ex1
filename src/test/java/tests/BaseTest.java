@@ -17,11 +17,7 @@ public abstract class BaseTest {
 
     @Before
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        ChromeDriver driver = new ChromeDriver();
         Configuration.browser = "chrome";
-        Configuration.driverManagerEnabled = true;
-        Configuration.headless = false;
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "http://localhost:4444/wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
